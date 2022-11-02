@@ -1,0 +1,404 @@
+@font-face {
+	font-family: 'JetBrainsMono';
+	src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2') format('woff2'),
+		url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Regular.woff') format('woff'),
+		url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/ttf/JetBrainsMono-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+body {
+	font-family: 'JetBrainsMono';
+	background-color: #1A1B1E;
+}
+
+#nav {
+	background-color: #3a3f42;
+}
+
+.nav-text {
+	color: #a9b7c6;
+}
+
+.nav-item:hover {
+	cursor: pointer;
+	background-color: #3f4447;
+}
+
+.nav-active-inner:hover {
+	cursor: alias;
+}
+
+.nav-active {
+	background-color: #2b2b2b;
+}
+
+.nav-active:hover {
+	background-color: #2b2b2b;
+	cursor: alias;
+}
+
+.nav-lborder {
+	border-left: 1px solid #2b2b2b;
+}
+
+.nav-rborder {
+	border-right: 1px solid #2b2b2b;
+}
+
+.text-string {
+	color: #6a8759;
+}
+
+.text-string>p {
+	text-align: justify;
+}
+
+.text-string>p>a {
+	color: #cc7832;
+}
+
+h1 {
+	color: #cc7832;
+}
+
+h2 {
+	color: #ffc66d;
+}
+
+h3 {
+	color: #ffc66d;
+}
+
+h4 {
+	color: #a9b7c6;
+}
+
+#resources-h {
+	font-size: large;
+}
+
+.var-highlight {
+	color: #8888c6;
+}
+
+.string-highlight {
+	color: #6a8759;
+}
+
+#typewriter {
+	font-size: 1.6em;
+	color: white;
+	margin: 0;
+}
+
+#typewriter:after {
+	content: "|";
+	animation: blink 500ms linear infinite alternate;
+}
+
+@-webkit-keyframes blink {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes blink {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes blink {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+#dr-socials:hover {
+	cursor: pointer;
+}
+
+.custom-popover {
+	--bs-popover-border-color: #3771a2;
+	--bs-popover-header-bg: #3771a2;
+	--bs-popover-bg: #FFD444;
+}
+
+#top-container {
+	background-color: #2b2b2b;
+}
+
+#syllabus-container {
+	background-color: #2b2b2b;
+}
+
+.in-syllabus-container {
+	background-color: #323232;
+}
+
+#my-table {
+	overflow: hidden;
+}
+
+#my-head {
+	color: #8888c6;
+}
+
+#for-devider {
+	color: #8888c6;
+}
+
+.my-td {
+	color: #6a8759;
+}
+
+.my-td:hover {
+	color: #6a8759;
+}
+
+.seperator {
+	height: 70px;
+}
+
+#sep1 {
+	position: relative;
+	background: #2b2b2b;
+	height: 9vh;
+	min-height: 80px;
+}
+
+#sep2 {
+	position: relative;
+	background: #2b2b2b;
+	height: 12vh;
+	border-bottom-left-radius: 50% 30%;
+	border-bottom-right-radius: 50% 30%;
+}
+
+.sep3 {
+	position: relative;
+	background: #2b2b2b;
+	height: 12vh;
+	max-height: 55px;
+	border-top-left-radius: 50% 30%;
+	border-top-right-radius: 50% 30%;
+}
+
+.sep4 {
+	position: relative;
+	background: #2b2b2b;
+	height: 12vh;
+	max-height: 55px;
+	border-bottom-left-radius: 50% 30%;
+	border-bottom-right-radius: 50% 30%;
+}
+
+#projects-container {
+	background: #2b2b2b;
+}
+
+#python-logo {
+	overflow: visible;
+}
+
+#python-logo>path {
+	position: relative;
+	stroke-width: 8px;
+	transition: all .2s ease-in-out;
+}
+
+#python-logo>path:first-child {
+	stroke: rgb(12, 12, 12);
+	fill: #3670A0;
+	animation: border-move 7s linear forwards infinite;
+}
+
+#python-logo>path:last-child {
+	stroke: rgb(12, 12, 12);
+	fill: #FED140;
+	animation: border-move 7s linear forwards infinite;
+}
+
+#python-logo:hover>path:first-child {
+	transform: translate(-1%, -1%);
+	text-shadow: 0 0 20px #3670A0;
+}
+
+#python-logo:hover>path:last-child {
+	transform: translate(1%, 1%);
+	box-shadow: 0 0 20px #FED140;
+}
+
+@keyframes border-move {
+	0% {
+		stroke-dasharray: 0 1600;
+	}
+
+	50% {
+		stroke-dasharray: 1600 1600;
+	}
+
+	92% {
+		stroke-dasharray: 0 1600;
+	}
+
+	100% {
+		stroke-dasharray: 0 1600;
+	}
+}
+
+.card {
+	overflow: hidden;
+}
+
+.my-card {
+	overflow: hidden;
+	background-color: #1A1B1E;
+	transition: 0.3s;
+}
+
+.my-card:hover {
+	scale: 1.05;
+	transition: 0.3s;
+}
+
+.my-card-title {
+	font-size: medium;
+}
+
+.my-card-body {
+	font-size: small;
+	color: #a9b7c6;
+}
+
+.card-body {
+	background-color: #1A1B1E;
+	color: #a9b7c6;
+}
+
+.book-card {
+	background-color: #1A1B1E;
+}
+
+.proj-card {
+	background-color: #1A1B1E;
+}
+
+.TA-card {
+	background-color: #2b2b2b;
+}
+
+.proj-card>h5 {
+	color: #ffc66d;
+}
+
+.ch-y {
+	background-color: #FED140;
+}
+
+.ch-b {
+	background-color: #3670A0;
+}
+
+.car-card-header {
+	background-color: #3670A0;
+}
+
+.car-card-footer {
+	background-color: #FED140;
+}
+
+.btn-prj {
+	background-color: #8888c6;
+	color: #1A1B1E;
+	border-color: #4e4e74;
+}
+
+#projects-exp {
+	color: #a9b7c6;
+	font-size: small;
+}
+
+@media (max-width: 767px) {
+	.nav-text {
+		font-size: 9px;
+	}
+
+	h1 {
+		font-size: larger;
+	}
+
+	h2 {
+		font-size: large;
+	}
+
+	h3 {
+		font-size: medium;
+	}
+
+	h4 {
+		font-size: medium;
+	}
+
+	h5 {
+		font-size: medium;
+	}
+
+	h6 {
+		font-size: small;
+	}
+
+	p {
+		font-size: smaller;
+	}
+
+	th {
+		font-size: small;
+	}
+
+	td {
+		font-size: smaller;
+	}
+
+	#resources-h {
+		font-size: smaller;
+	}
+
+	#typewriter {
+		font-size: 1em;
+	}
+
+	.text-string>p {
+		text-align: start;
+		font-size: x-small;
+	}
+
+	#python-logo>path {
+		stroke-width: 12px;
+	}
+
+	#python-logo>path:first-child {
+		stroke: white;
+	}
+
+	#python-logo>path:last-child {
+		stroke: white;
+	}
+
+	.seperator {
+		height: 40px;
+	}
+}
