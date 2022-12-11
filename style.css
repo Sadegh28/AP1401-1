@@ -327,6 +327,12 @@ h4 {
 	border-color: #4e4e74;
 }
 
+.btn-mini-prj {
+	background-color: #8888c6;
+	color: #1A1B1E;
+	border-color: #4e4e74;
+}
+
 #projects-exp {
 	color: #a9b7c6;
 	font-size: small;
