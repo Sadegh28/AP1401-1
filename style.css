@@ -346,6 +346,17 @@ h4 {
 	color: #6666ac
 }
 
+.suc-proj:hover {
+	background-color: #2f2f2f;
+}
+
+.suc-proj:before, .suc-proj:after {
+    content: "";
+    height: 1px;
+	background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(127,127,127,1) 50%,rgba(0,0,0,0) 100%);
+	display: block;
+}
+
 @media (max-width: 767px) {
 	.nav-text {
 		font-size: 9px;
